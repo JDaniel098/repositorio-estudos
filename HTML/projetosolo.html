@@ -1,48 +1,98 @@
 <html>
     <head>
     <title>projeto tabela</title>
+
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
         table {
-           border-collapse: collapse;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
         }
         th, td {
-            padding: 1.2em;
             border: 1px solid black;
+            padding: 5px;
+        }
+        .destaque {
+            background-color: grey;
+        }
+        col.nome {
+            background-color: greenyellow;
         }
     </style>
     </head>
     <body>
+        <h1>Exercício de Tabelas</h1>
         <table>
-           <thead>
+            <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade">
+            <col class="profissao">
+            </colgroup>
+            <caption>Cadastro</caption>
             <tr>
-                <th>Área</th>
-                <th colspan="2">Disciplinas</th>
-                <th>Notas</th>
-                <th>Média</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
             </tr>
             <tr>
-                <th>Exatas</th>
-                <td>Matemática</td>
-                <td>Física</td>
-                <td>Química</td>
-                <td>Biologia</td>
+                <td>Ana Maria</td> 
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
             </tr>
             <tr>
-                <th colspan="4">Média de Exatas</th>
-                <td>0,00</td>
+                <td>João Daniel</td> 
+                <td>M</td>
+                <td>25</td>
+                <td>Jornalista</td>
             </tr>
             <tr>
-                <th>humanas</th>
-                <td>História</td>
-                <td>Geografia</td>
+                <td>Ana Maria</td> 
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
             </tr>
-           </thead>
-           <tbody>
+            <tr>
+                <td>Ana Maria</td> 
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Ana Maria</td> 
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Ana Maria</td> 
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Ana Maria</td> 
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Ana Maria</td> 
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
 
-           </tbody>
         </table>
     </body>
 </html>
